@@ -1,0 +1,91 @@
+/* miniprogram/pages/todo/newlist.wxss */
+page{
+    background-color: #FFFFFF;
+}
+picker{margin-bottom:16px;}
+.img{
+  margin-top: 27rpx;
+  margin-left: 20rpx;
+  height:86rpx;
+  width:86rpx;
+ 
+}
+.img_1{
+  height: 140rpx;
+  width: 140rpx;
+  
+}
+.img1{
+  margin-top: 33rpx;
+  margin-left: 26rpx;
+  height:74rpx;
+  width:74rpx;
+}
+.block1{
+  margin-top:10rpx;
+  height: 140rpx;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border:solid 1rpx;
+  border-radius: 5rpx;
+  border-color: ghostwhite;
+  display: flex;
+}
+.block2{
+  margin-top: 10rpx;
+  height: 400rpx;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border:solid 1rpx;
+  border-radius: 5rpx;
+  border-color: ghostwhite;
+}
+.block3{
+  margin-top:100rpx;
+}
+.input_1{
+  height: 140rpx;
+  margin-left: 180rpx;
+  position: absolute;
+  z-index: 2;
+}
+.input1{
+  height: 140rpx;
+  width: 550rpx;
+  font-family: Arial;
+  font-size: 40rpx;
+}
+
+.font1{
+  margin-left:80rpx;
+  margin-top:50rpx;
+  font-size: 40rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  z-index: 2;
+}
+.font2{
+  right:20rpx;
+  margin-top:50rpx;
+  font-size: 40rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  z-index: 2; 
+}
+.placeholderStyle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:40rpx;
+  margin-left: 4rpx;
+  vertical-align: center;
+  color: black;
+  
+}
+.weui-textarea{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40rpx;
+
+}

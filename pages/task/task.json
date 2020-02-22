@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "backgroundColor": "#FFFFFA",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#FFFFFA",
+  "navigationBarTitleText": "My Tasks",
+  "navigationBarTextStyle": "black"
+  
+}

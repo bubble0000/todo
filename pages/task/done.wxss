@@ -1,0 +1,95 @@
+/* miniprogram/pages/task/done.wxss */
+/* miniprogram/task/vital.wxss */
+/* miniprogram/task/task.wxss */
+page{
+  background-color:#FAF0E6;
+}
+.weui-check__label:before{left:55px}.weui-check__label:active{background-color:#ececec}.weui-check{position:absolute;left:-9999px}.weui-check__hd_in-checkbox{display: flex;margin-top:30rpx;height: 60rpx;}
+.weui-cell__bd{-webkit-box-flex:1;-webkit-flex:1;flex:1}
+.weui-check__label{
+  border:solid 1rpx;
+  border-radius: 15rpx;
+  border-color: white;
+  margin-left:15rpx;
+  margin-right:15rpx;
+  height:120rpx;
+  margin-top:10rpx;
+  display: flex;
+  transition: all 0.2s;
+  background-color: white;
+  
+ 
+}
+.weui-cell.weui-check__label.active{
+  border:solid 1rpx;
+  border-radius: 5rpx;
+  border-color: white;
+  margin-left:-80rpx;
+  margin-right:80rpx;
+  height:120rpx;
+  margin-top:10rpx;
+
+  
+}
+
+.weui-cell.weui-check__label.active .weui-check__hd_in-checkbox{
+  
+  
+}
+.weui-cell.weui-check__label.active .del-button{
+  position: absolute;
+  right:10rpx;
+  height:60rpx;
+  width:60rpx;
+  margin-top:30rpx;
+  transition: all 0.2s;
+  margin-left: 30rpx;
+  /* background-color:white;
+  border-radius: 5rpx; */
+  
+}
+.weui-cell.weui-check__label .del-button {
+ position: absolute;
+ right: -140rpx;
+ width:60rpx;
+ height: 60rpx;
+ margin-top:30rpx;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: all 0.2s;
+
+}
+.font1{
+  margin-left:80rpx;
+  vertical-align: center;
+  margin-top:10rpx;
+  font-size: 40rpx;
+  width: 515rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.weui-icon-checkbox_circle{
+  margin-left: 20rpx;
+  margin-top:10rpx;
+}
+.weui-icon-checkbox_success{
+  margin-left: 20rpx;
+  margin-top:10rpx;
+}
+.img{
+
+  margin-top:10rpx;
+  margin-right:20rpx;
+  height:40rpx;
+  width:40rpx;
+
+}
+.myfont{
+  font-style: italic;
+  font-size: 50rpx;
+ 
+}
+.block3{
+  margin-top:50%;
+  margin-left: 80rpx;
+}

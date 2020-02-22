@@ -1,0 +1,36 @@
+<!--miniprogram/pages/todo/newlist.wxml-->
+<view class="block1">
+<view class="img_1">
+<image src="/images/task1.png" class="img"></image>
+</view>
+<view class="input_1">
+<input placeholder="{{mytask==''?'Add task':''}}"
+placeholder-class="placeholderStyle" class="input1" bindinput="bindInputChange" data-type="task" value="{{mytask}}"></input>
+</view>
+</view>
+<view class="block1">
+<picker mode="date" value="{{date}}" start="2020-02-14" end="2020-12-31" bindchange="bindDateChange">
+  <image src="/images/deadline.png" class="img1"></image>
+  <text class="font1">{{deadline==''?'Deadline':deadline}}</text>
+            </picker>
+  <!-- <text class="font2">{{deadline}}</text> -->
+</view>
+<view class="block2">
+<image src="/images/remark.png" class="img"></image>
+<text class="font1">Remark</text>
+<view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                
+                    <textarea class="weui-textarea" bindinput="bindInputChange" data-type="remark" value="{{myremark}}">
+                </textarea>
+                </view>
+            </view>
+        </view>
+         
+</view>
+<view class="block3">
+<view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="addtodos">确定</button>
+        </view>
+</view>

@@ -1,0 +1,28 @@
+<!--miniprogram/task/vital.wxml-->
+ <view class="block1">
+            <checkbox-group bindchange="checkboxChange">
+                <view class="weui-cell weui-check__label {{!item.delete?'':'active'}}" wx:for="{{todos}}" wx:key="_id">
+                <label>
+                    <checkbox class="weui-check" value="{{item._id}}" checked="{{item.checked}}"/>
+
+                    <view class="weui-cell__hd weui-check__hd_in-checkbox" bindtouchstart="touchS" bindtouchmove="touchM" data-id="{{item._id}}">
+                        <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                        <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                        <text class="font1" bindtouchstart='bindTouchStart' bindtouchend='bindTouchEnd' bindlongtap="ondetail" data-id="{{item._id}}">{{item.mytask}}</text>
+                        <image class="img" catchtap="onCollectionTap" wx:if="{{item.collected}}" src="/images/collected.png" data-id="{{item._id}}"> </image>
+                        <image class="img" wx:else catchtap='onCollectionTap' src="/images/uncollected.png" data-id="{{item._id}}"></image>
+                    </view>
+                 <view wx:if="{{item.due!=''}}" class="block4">
+           <text class="fontx"> {{item.due}}</text>
+           </view>   
+                </label>
+                 <image src="/images/delete.png" class="del-button" catchtap="todelete" data-id="{{item._id}}"></image>
+                </view>
+            </checkbox-group>
+      <view wx:if="{{!task_length}}" class="block3">
+      <text class="myfont" wx:if="{{!task_length}}">Add important tasks here</text>  
+      </view>  
+             <view class="block2" hover-class="block2-hover" bindtap="addtask">  
+        <image class="img0" src="/images/addtask.png"></image>   
+            </view>
+        </view>
